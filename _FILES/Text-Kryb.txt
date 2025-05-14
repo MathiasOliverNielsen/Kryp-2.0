@@ -1,0 +1,91 @@
+NAVIGATION:
+FORSIDE 
+SHOP
+FORHANDLERE
+INSPIRATION
+OM KRYB
+KONTAKT
+_________________________________
+PRODUKTER:
+DARE SQUARES
+med chilli, chokolade og fårekyllinger
+49,95/stk
+
+INSEKTBAR
+med dadler, nougat og insektmel
+19,95/stk
+
+DARE SQUARES
+med peanutbutter og Buffalo-orme
+49,95/stk
+
+INSEKTSNACK
+med chili
+39,95/stk
+
+INSEKTKNÆK
+med Chiafrø og insektmel
+29,95/stk
+
+INSEKTSNACK
+med Sour Cream & Onion
+39,95/stk
+_________________________________
+OM KRYB
+Uanset hvor vi arbejder i KRYB, så deler vi de samme værdier og den samme mission om at skabe livsglæde gennem måltidet.
+KRYB sigter mod at dele lækre, sunde, insektbaserede snacks, uden at gå på kompromis med smag og duft.
+Vores sortiment har lokalt fremstillede ingredienser i deres mest naturlige form for at skabe inspirerede snacks, hvor alt er lavet 100% af os selv.
+Vi er lidenskabelige med at tilbyde vores kunder velsmagende og nærende snacks lavet af sunde ingredienser, der har en positiv indvirkning på krop og sjæl.
+Hos KRYB er vores mål simpelt - at omdefinere hvad det betyder at spise godt.
+Vi er forpligtede til at opretholde en bæredygtig og sund livsstil og aktivt bidrage til at sænke vores CO2-fodaftryk og bevare vores planets vandforsyning gennem vores sortiment, opmærksomme ingrediensopkøb og miljøvenlige emballage.
+Spis godt. Spis med formål. Spis KRYB
+
+Læs mere om KRYB her >>>
+
+_________________________________
+OPSKRIFTER
+(3 X "Figures"?)
+Orme-muffins
+Lorem ipsum dolor sit amet consectetur adipi..
+
+_________________________________
+KONTAKT KRYB:
+Velkommen til Snakken, Krybs kundeservice.
+Hos Kryb er vi altid glade for at tale med vores kunder. Faktisk så meget så vi ofte inviterer på middag i vores byhave på Ydre Nørrebro. Men hvis du ikke kan vente til næste gang vi inviterer, kan du også ringe, skrive til os her på siden eller sende en mail.
+Vi sidder klar til at hjælpe dig på telefon 7026 0066 søndag til onsdag fra 9 til 18, og torsdag til fredag fra 9 til 17. Du kan skrive til os via chat søndag til torsdag fra 9 til 22, og fredag og lørdag fra 9 til 17.
+Du er også velkommen til at sende os en mail på info@kryb.dk, eller hjælpe os lidt på vej ved at udfylde kontaktformular her til højre - så vender vi tilbage til dig, så snart vi kan. Vil du gerne sende et billede til os, så send det i en mail på info@kryb.dk
+
+For- og efternavn
+Email
+Besked
+
+_________________________________
+GLOBAL FOOTER:
+OM KRYB
+Historien
+Virksomheder og afdelinger
+Job
+CSR
+Danmark mod Madspild
+Foreign suppliers
+
+INSPIRATION
+Vin & Mad
+Opskrifter
+Sociale medier
+Gaver Privat
+
+OM HANDEL
+Handelsbetingelser
+Beskyttelse af personlige oplysninger
+Levering
+Fødevarestyrelsens smiley-rapporter
+
+KONTAKT
+Telefon (+45) 12345678
+info@kryb.dk
+Butikker/Åbningstider
+
+
+https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery
+window.id.show();

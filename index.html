@@ -13,39 +13,98 @@
       <!-- Global Header -->
       <header>
         <div class="headerContainer">
-          <h1>My Website</h1>
-          // måske img? / Hero
           <nav>
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#forside">FORSIDE</a></li>
+              <li><a href="#shop">SHOP</a></li>
+              <li><a href="#forhandlere">FORHANDLERE</a></li>
+              <li><a href="#inspiration">INSPIRATION</a></li>
+              <li><a href="#omKryb">OM KRYB</a></li>
+              <li><a href="#kontakt">KONTAKT</a></li>
+            </ul>
+            <ul>
+              <li>
+                <!-- Basket Icon -->
+                <i class="fa-solid fa-basket-shopping"></i>
+              </li>
             </ul>
           </nav>
+          <!-- Hero Img -->
+          <img src="" alt="" />
         </div>
       </header>
     </div>
     <!-- Main Content -->
     <main>
       <!-- Main title -->
-      <header><h2>filler</h2></header>
-      // mby subtitles?
-      <section id="home">
-        <h2>Welcome to My Website</h2>
-        <p>This is the home section.</p>
+      <header><h2>PRODUKTER</h2></header>
+      <section id="produkter">
+        <figure>
+          <img src="assets/images/dare-squares-chilli.jpg" alt="DARE SQUARES med chilli, chokolade og fårekyllinger" />
+          <figcaption>DARE SQUARES med chilli, chokolade og fårekyllinger - 49,95/stk</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/insektbar.jpg" alt="INSEKTBAR med dadler, nougat og insektmel" />
+          <figcaption>INSEKTBAR med dadler, nougat og insektmel - 19,95/stk</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/dare-squares-peanutbutter.jpg" alt="DARE SQUARES med peanutbutter og Buffalo-orme" />
+          <figcaption>DARE SQUARES med peanutbutter og Buffalo-orme - 49,95/stk</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/insektsnack-chili.jpg" alt="INSEKTSNACK med chili" />
+          <figcaption>INSEKTSNACK med chili - 39,95/stk</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/insektknaek-chia.jpg" alt="INSEKTKNÆK med Chiafrø og insektmel" />
+          <figcaption>INSEKTKNÆK med Chiafrø og insektmel - 29,95/stk</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/insektsnack-sourcream.jpg" alt="INSEKTSNACK med Sour Cream & Onion" />
+          <figcaption>INSEKTSNACK med Sour Cream & Onion - 39,95/stk</figcaption>
+        </figure>
       </section>
-      <section id="about">
-        <h2>About Us</h2>
-        <p>This is the about section.</p>
+      <section id="omKryb">
+        <h2>OM KRYB</h2>
+        <p>
+          Uanset hvor vi arbejder i KRYB, så deler vi de samme værdier og den samme mission om at skabe livsglæde gennem måltidet. KRYB sigter mod at dele lækre, sunde, insektbaserede snacks, uden at
+          gå på kompromis med smag og duft. Vores sortiment har lokalt fremstillede ingredienser i deres mest naturlige form for at skabe inspirerede snacks, hvor alt er lavet 100% af os selv. Vi er
+          lidenskabelige med at tilbyde vores kunder velsmagende og nærende snacks lavet af sunde ingredienser, der har en positiv indvirkning på krop og sjæl. Hos KRYB er vores mål simpelt - at
+          omdefinere hvad det betyder at spise godt. Vi er forpligtede til at opretholde en bæredygtig og sund livsstil og aktivt bidrage til at sænke vores CO2-fodaftryk og bevare vores planets
+          vandforsyning gennem vores sortiment, opmærksomme ingrediensopkøb og miljøvenlige emballage. Spis godt. Spis med formål. Spis KRYB
+        </p>
+        <a href="#omKryb">Læs mere om KRYB her &gt;&gt;&gt;</a>
       </section>
-      <section id="services">
-        <h2>Our Services</h2>
-        <p>This is the services section.</p>
+      <section id="opskrifter">
+        <h2>OPSKRIFTER</h2>
+        <ul>
+          <li>Orme-muffins</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipi..</li>
+        </ul>
       </section>
-      <section id="contact">
-        <h2>Contact Us</h2>
-        <p>This is the contact section.</p>
+      <section id="kontakt">
+        <h2>KONTAKT KRYB</h2>
+        <p>
+          Velkommen til Snakken, Krybs kundeservice. Hos Kryb er vi altid glade for at tale med vores kunder. Faktisk så meget så vi ofte inviterer på middag i vores byhave på Ydre Nørrebro. Men hvis
+          du ikke kan vente til næste gang vi inviterer, kan du også ringe, skrive til os her på siden eller sende en mail.
+        </p>
+        <p>
+          Vi sidder klar til at hjælpe dig på telefon 7026 0066 søndag til onsdag fra 9 til 18, og torsdag til fredag fra 9 til 17. Du kan skrive til os via chat søndag til torsdag fra 9 til 22, og
+          fredag og lørdag fra 9 til 17.
+        </p>
+        <p>
+          Du er også velkommen til at sende os en mail på info@kryb.dk, eller hjælpe os lidt på vej ved at udfylde kontaktformular her til højre - så vender vi tilbage til dig, så snart vi kan. Vil du
+          gerne sende et billede til os, så send det i en mail på info@kryb.dk
+        </p>
+        <form>
+          <label for="name">For- og efternavn</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Besked</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
       </section>
     </main>
     <!-- Global Footer -->
