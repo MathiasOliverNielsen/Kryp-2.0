@@ -318,43 +318,23 @@ nav ul li a:hover {
   font-size: var(--product-font-size);
   text-align: center;
 }
-/* #region FOOTER */
-.footerContainer {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  gap: 2rem;
-  padding: 0 10rem;
-  text-align: center;
-}
-.socialsContainer {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-.krybLogoFooter {
-  width: 20%;
-  margin: 0 auto;
-  text-align: center;
-}
-/* #endregion */
 /* #endregion */
 /* #region FOOTER */
 .footerContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 2rem;
   background-color: var(--background);
+  max-width: 1300px;
+  max-height: 900px;
+  margin-left: 17rem;
 }
 .socialsContainer {
   display: flex;
-  justify-content: center;
   gap: 6rem;
   margin-top: 1rem;
-  width: 27%;
+  width: 35%;
   margin-bottom: 2rem;
   padding-top: 5rem;
 }
@@ -372,7 +352,7 @@ nav ul li a:hover {
 }
 .footerGridContainer {
   display: flex;
-  gap: 10rem;
+  gap: 8rem;
 }
 .footerGridContainer h5 {
   font-size: var(--font-size-one);
