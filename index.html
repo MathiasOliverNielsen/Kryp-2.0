@@ -9,16 +9,17 @@
     <script src="assets/js/script.js" defer></script>
   </head>
   <body>
-    <!-- Global HEADER -->
+    <!-- #region Global HEADER -->
     <header class="mainHeader">
       <div class="search-container">
         <i class="fas fa-search"></i>
         <input type="text" placeholder="SØG" />
       </div>
-      <div class="logoContainer"><img class="KRYBLogo" src="assets/images/logo_small_black.png" alt="" /></div>
+      <div class="logoContainer"><img src="assets/images/logo_small_black.png" alt="" /></div>
       <!-- <img src="assets/images/background.jpg" alt="KRYB LOGO" /> -->
     </header>
-    <!-- GLOAL NAVIGATION -->
+    <!-- #endregion -->
+    <!-- #region GLOAL NAVIGATION -->
     <nav>
       <ul>
         <li><a href="index.html">FORSIDE</a></li>
@@ -49,12 +50,14 @@
         </li>
       </ul>
     </nav>
-    <!-- GLOBAL HERO IMAGE -->
+    <!-- #endregion -->
+    <!-- #region GLOBAL HERO IMAGE -->
     <div class="heroImage">
       <img src="assets/images/background.jpg" alt="KRYB hero" />
     </div>
-    <!-- MAIN CONTENT -->
-    <!-- PRODUCT SECTION   -->
+    <!-- #endregion -->
+    <!-- #region MAIN CONTENT -->
+    <!-- #region PRODUCT SECTION   -->
     <section id="products">
       <header>
         <h2><strong>Produkter</strong></h2>
@@ -118,8 +121,9 @@
         </div>
       </article>
     </section>
+    <!-- #endregion -->
     <hr />
-    <!-- ABOUT SECTION  -->
+    <!-- #region ABOUT SECTION  -->
     <section id="about">
       <header>
         <h2><strong>OM KRYB</strong></h2>
@@ -147,8 +151,7 @@
             er vores mål simpelt – at omdefinere hvad det betyder at spise godt.
             <br />
             <br />
-            Vi er forpligtede til at opretholde en bæredygtig og sund livsstil og aktivt bidrage til at sænke vores CO2-fodaftryk og bevare vores planets vandforsyning gennem vores sortiment,
-            opmærksomme ingrediensopkøb og miljøvenlige emballage. Spis godt.
+            Vi er forpligtede til at opretholde en bæredygtig og sund livsstil og aktivt bidrage til at sænke vores CO2-fodaftryk og bevare vores planets vandforsyning gennem vores sortiment, opmærksomme ingrediensopkøb og miljøvenlige emballage. Spis godt.
             <br />
             <br />
             Spis med formål. Spis
@@ -164,11 +167,12 @@
         </div>
       </article>
     </section>
+    <!-- #endregion -->
     <hr />
-    <!-- RECEPIES SECTION   -->
+    <!-- #region RECEPIES SECTION   -->
     <section id="recepies">
       <div class="recipe-slider-container">
-        <h1 class="recipe-heading"><strong>OPSKRIFTER</strong></h1>
+        <h2 class="recipe-heading"><strong>OPSKRIFTER</strong></h2>
 
         <div class="recipe-carousel">
           <div class="recipe-slide-group active" id="recipe-group1">
@@ -193,8 +197,9 @@
         </button>
       </div>
     </section>
+    <!-- #endregion -->
     <hr />
-    <!-- CONTACT SECTION  -->
+    <!-- #region CONTACT SECTION  -->
     <section id="contact">
       <header>
         <strong><h2>KONTAKT KRYB</h2></strong>
@@ -202,49 +207,35 @@
       <article>
         <div class="contactContainer">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aperiam nemo, culpa, asperiores saepe temporibus facilis fugit magnam excepturi deserunt eius pariatur enim vitae
-            laborum quos minus maiores! Commodi, illo.
-
+            Velkommen til Snakken, <b>Krybs</b> kundeservice.
             <br />
             <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nesciunt ipsum quidem dolorem veniam quae similique aperiam sit impedit obcaecati placeat quasi, nisi quos atque
-            architecto quisquam accusantium. Architecto, esse!
-
-            <br />
-
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A, laudantium porro eligendi, quos labore molestias inventore laborum amet voluptate deleniti repellendus earum. Corrupti assumenda
-            repellat repudiandae autem quas alias adipisci?
+            Hos Kryb er vi altid glade for at tale med vores kunder. Faktisk så meget så vi ofte inviterer på middag i vores byhave på Ydre Nørrebro. Men hvis du ikke kan vente til næste gang vi inviterer, kan du også ringe, skrive til os her på siden eller sende en mail.
             <br />
             <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aperiam nemo, culpa, asperiores saepe temporibus facilis fugit magnam excepturi deserunt eius pariatur enim vitae
-            laborum quos minus maiores! Commodi, illo.
-
+            Vi sidder klar til at hjælpe dig på telefon <b>7026 0066</b> søndag til onsdag fra 9 til 18, og torsdag til fredag fra 9 til 17. Du kan skrive til os via chat søndag til torsdag fra 9 til 22, og fredag og lørdag fra 9 til 17.
             <br />
             <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nesciunt ipsum quidem dolorem veniam quae similique aperiam sit impedit obcaecati placeat quasi, nisi quos atque
-            architecto quisquam accusantium. Architecto, esse!
-
+            Du er også velkommen til at sende os en mail på <b>info@kryb.dk</b>, eller hjælpe os lidt på vej ved at udfylde kontaktformular her til højre - så vender vi tilbage til dig, så snart vi kan.
             <br />
-
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A, laudantium porro eligendi, quos labore molestias inventore laborum amet voluptate deleniti repellendus earum. Corrupti assumenda
-            repellat repudiandae autem quas alias adipisci?
+            Vil du gerne sende et billede til os, så send det i en mail på <b>info@kryb.dk</b>
           </p>
-          <form action="submit_form.php" method="post" class="contactForm">
-            <label for="firstName">For og efternavn</label>
-            <input type="text" id="firstName" name="firstName" required />
+          <form action="submit_form" method="post" class="contactForm">
+            <label for="fullName">Fuldt navn</label>
+            <input type="text" id="fullName" name="fullName" required />
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required />
             <label for="message">Besked:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
-            <button type="button" id="validate">Send besked</button>
+            <button type="submit" id="validate">Send besked</button>
           </form>
         </div>
       </article>
     </section>
+    <!-- #endregion -->
+    <!-- #endregion -->
     <hr />
-    <!-- GLOBAL FOOTER SOCIALS -->
+    <!-- #region GLOBAL FOOTER SOCIALS -->
     <footer>
       <div class="footerContainer">
         <div class="socialsContainer">
@@ -303,5 +294,6 @@
         </div>
       </div>
     </footer>
+    <!-- #endregion -->
   </body>
 </html>

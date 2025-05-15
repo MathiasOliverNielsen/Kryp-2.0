@@ -1,47 +1,63 @@
 // Carusel functionality
 
-// Form validation
 
-document.getElementById('validate').addEventListener('click', function () {
-  const fullname = this.form.fullname;
-  const email = this.form.email;
+// Form validation with success alert
+document.getElementById('validate').addEventListener('click', function (event) {
+  event.preventDefault(); // Prevent form submission
+  const form = this.closest('form');
+  const fullname = form.fullName;
+  const email = form.email;
+  const message = form.message;
 
-  if (!fullname.value) {
-    displayError(fullname, 'Du skal udfyde dette felt');
-    return;
+  let isValid = true;
+
+  if (!fullname.value.trim()) {
+    displayError(fullname, 'Du skal udfyde dit fulde navn');
+    isValid = false;
   }
-  if (!email.value) {
-    displayError(email, 'Du skal udfyde dette felt');
+  if (!email.value.trim()) {
+    displayError(email, 'Du skal udfyde din email');
+    isValid = false;
+  }
+  if (!message.value.trim()) {
+    displayError(message, 'Du udfylde en besked');
+    isValid = false;
+  }
+
+  if (isValid) {
+    alert('Formularen er korrekt udfyldt!');
+    form.reset(); // Reset the form after successful validation
   }
 });
 
 const displayError = (element, message) => {
   const parent = element.parentElement;
-  const grandparent = parent.parentElement;
 
   // Remove any existing error message
-  if (grandparent.querySelector('.error-message')) {
-    grandparent.querySelector('.error-message').remove();
+  const existingError = parent.querySelector('.error-message');
+  if (existingError) {
+    existingError.remove();
   }
 
   // Add error class and message
-  grandparent.classList.add('error');
+  parent.classList.add('error');
   const errorMessage = document.createElement('span');
   errorMessage.className = 'error-message';
   errorMessage.textContent = message;
 
+  errorMessage.style.color = 'red';
   parent.appendChild(errorMessage);
 };
 
-document.querySelectorAll('input').forEach((element) => {
+document.querySelectorAll('input, textarea').forEach((element) => {
   element.addEventListener('input', function () {
     const parent = this.parentElement;
-    const grandparent = parent.parentElement;
 
     // Remove error message and class on input
-    if (grandparent.querySelector('.error-message')) {
-      grandparent.querySelector('.error-message').remove();
+    const existingError = parent.querySelector('.error-message');
+    if (existingError) {
+      existingError.remove();
     }
-    grandparent.classList.remove('error');
+    parent.classList.remove('error');
   });
 });
