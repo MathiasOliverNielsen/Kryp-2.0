@@ -3,122 +3,304 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>KRYB</title>
+    <script src="https://kit.fontawesome.com/409cc2fa49.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/main.css" />
     <script src="assets/js/script.js" defer></script>
   </head>
   <body>
-    <!-- Global Site Container -->
-    <div class="fullSiteContainer">
-      <!-- Global Header -->
-      <header>
-        <div class="headerContainer">
-          <nav>
-            <ul>
-              <li><a href="#forside">FORSIDE</a></li>
-              <li><a href="#shop">SHOP</a></li>
-              <li><a href="#forhandlere">FORHANDLERE</a></li>
-              <li><a href="#inspiration">INSPIRATION</a></li>
-              <li><a href="#omKryb">OM KRYB</a></li>
-              <li><a href="#kontakt">KONTAKT</a></li>
-            </ul>
-            <ul>
-              <li>
-                <!-- Basket Icon -->
-                <i class="fa-solid fa-basket-shopping"></i>
-              </li>
-            </ul>
-          </nav>
-          <!-- Hero Img -->
-          <img src="" alt="" />
-        </div>
-      </header>
+    <!-- Global HEADER -->
+    <header class="mainHeader">
+      <div class="search-container">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="SØG" />
+      </div>
+      <div class="logoContainer"><img class="KRYBLogo" src="assets/images/logo_small_black.png" alt="" /></div>
+      <!-- <img src="assets/images/background.jpg" alt="KRYB LOGO" /> -->
+    </header>
+    <!-- GLOAL NAVIGATION -->
+    <nav>
+      <ul>
+        <li><a href="index.html">FORSIDE</a></li>
+        <li>
+          <a href="products">SHOP</a>
+        </li>
+        <!--NEW HTML PAGE -->
+        <li>
+          <a href="#" target="_blank">Forhandlere</a>
+        </li>
+        <li>
+          <a href="recepies">INSPIRATION</a>
+        </li>
+        <li>
+          <a href="about">OM KRYB</a>
+        </li>
+        <li>
+          <a href="contact">KONTAKT</a>
+        </li>
+      </ul>
+      <!-- SVG Basket -->
+      <ul>
+        <li>
+          <a href="#" class="cartLink">
+            <i class="fas fa-shopping-bag"></i>
+            <span>(0)</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- GLOBAL HERO IMAGE -->
+    <div class="heroImage">
+      <img src="assets/images/background.jpg" alt="KRYB hero" />
     </div>
-    <!-- Main Content -->
-    <main>
-      <!-- Main title -->
-      <header><h2>PRODUKTER</h2></header>
-      <section id="produkter">
-        <figure>
-          <img src="assets/images/dare-squares-chilli.jpg" alt="DARE SQUARES med chilli, chokolade og fårekyllinger" />
-          <figcaption>DARE SQUARES med chilli, chokolade og fårekyllinger - 49,95/stk</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/images/insektbar.jpg" alt="INSEKTBAR med dadler, nougat og insektmel" />
-          <figcaption>INSEKTBAR med dadler, nougat og insektmel - 19,95/stk</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/images/dare-squares-peanutbutter.jpg" alt="DARE SQUARES med peanutbutter og Buffalo-orme" />
-          <figcaption>DARE SQUARES med peanutbutter og Buffalo-orme - 49,95/stk</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/images/insektsnack-chili.jpg" alt="INSEKTSNACK med chili" />
-          <figcaption>INSEKTSNACK med chili - 39,95/stk</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/images/insektknaek-chia.jpg" alt="INSEKTKNÆK med Chiafrø og insektmel" />
-          <figcaption>INSEKTKNÆK med Chiafrø og insektmel - 29,95/stk</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/images/insektsnack-sourcream.jpg" alt="INSEKTSNACK med Sour Cream & Onion" />
-          <figcaption>INSEKTSNACK med Sour Cream & Onion - 39,95/stk</figcaption>
-        </figure>
-      </section>
-      <section id="omKryb">
-        <h2>OM KRYB</h2>
-        <p>
-          Uanset hvor vi arbejder i KRYB, så deler vi de samme værdier og den samme mission om at skabe livsglæde gennem måltidet. KRYB sigter mod at dele lækre, sunde, insektbaserede snacks, uden at
-          gå på kompromis med smag og duft. Vores sortiment har lokalt fremstillede ingredienser i deres mest naturlige form for at skabe inspirerede snacks, hvor alt er lavet 100% af os selv. Vi er
-          lidenskabelige med at tilbyde vores kunder velsmagende og nærende snacks lavet af sunde ingredienser, der har en positiv indvirkning på krop og sjæl. Hos KRYB er vores mål simpelt - at
-          omdefinere hvad det betyder at spise godt. Vi er forpligtede til at opretholde en bæredygtig og sund livsstil og aktivt bidrage til at sænke vores CO2-fodaftryk og bevare vores planets
-          vandforsyning gennem vores sortiment, opmærksomme ingrediensopkøb og miljøvenlige emballage. Spis godt. Spis med formål. Spis KRYB
-        </p>
-        <a href="#omKryb">Læs mere om KRYB her &gt;&gt;&gt;</a>
-      </section>
-      <section id="opskrifter">
-        <h2>OPSKRIFTER</h2>
-        <ul>
-          <li>Orme-muffins</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipi..</li>
-        </ul>
-      </section>
-      <section id="kontakt">
-        <h2>KONTAKT KRYB</h2>
-        <p>
-          Velkommen til Snakken, Krybs kundeservice. Hos Kryb er vi altid glade for at tale med vores kunder. Faktisk så meget så vi ofte inviterer på middag i vores byhave på Ydre Nørrebro. Men hvis
-          du ikke kan vente til næste gang vi inviterer, kan du også ringe, skrive til os her på siden eller sende en mail.
-        </p>
-        <p>
-          Vi sidder klar til at hjælpe dig på telefon 7026 0066 søndag til onsdag fra 9 til 18, og torsdag til fredag fra 9 til 17. Du kan skrive til os via chat søndag til torsdag fra 9 til 22, og
-          fredag og lørdag fra 9 til 17.
-        </p>
-        <p>
-          Du er også velkommen til at sende os en mail på info@kryb.dk, eller hjælpe os lidt på vej ved at udfylde kontaktformular her til højre - så vender vi tilbage til dig, så snart vi kan. Vil du
-          gerne sende et billede til os, så send det i en mail på info@kryb.dk
-        </p>
-        <form>
-          <label for="name">For- og efternavn</label>
-          <input type="text" id="name" name="name" required />
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-          <label for="message">Besked</label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit">Send</button>
-        </form>
-      </section>
-    </main>
-    <!-- Global Footer -->
+    <!-- MAIN CONTENT -->
+    <!-- PRODUCT SECTION   -->
+    <section id="products">
+      <header>
+        <h2><strong>Produkter</strong></h2>
+      </header>
+      <article>
+        <div class="productCards">
+          <div class="productCard">
+            <img src="assets/images/daretoeat_img-3.jpg" alt="Product 1" />
+            <h5><strong>DARE SQUARES</strong></h5>
+            <p>med chili, chokolade og fårekyllinger</p>
+            <strong>
+              <p>49,95/stk</p>
+            </strong>
+            <button>Læg I Kurv</button>
+          </div>
+          <div class="productCard">
+            <img src="assets/images/daretoeat_img-2.jpg" alt="Product 2" />
+            <h5><strong>INSEKTBAR</strong></h5>
+            <p>med dadler, nugat og insektmel</p>
+            <strong>
+              <p>19,95/stk</p>
+            </strong>
+            <button>Læg I Kurv</button>
+          </div>
+          <div class="productCard">
+            <img src="assets/images/daretoeat_img-1.jpg" alt="Product 3" />
+            <h5><strong>DARE SQUARES</strong></h5>
+            <p>med paenutbutter og buffalo-orme</p>
+            <strong>
+              <p>49,95/stk</p>
+            </strong>
+            <button>Læg I Kurv</button>
+          </div>
+          <div class="productCard">
+            <img src="assets/images/insektsnack.jpg" alt="Product 4" />
+            <h5><strong>INSEKTSNACK</strong></h5>
+            <p>med chili</p>
+            <strong>
+              <p>39,95/stk</p>
+            </strong>
+            <button>Læg I Kurv</button>
+          </div>
+          <div class="productCard">
+            <img src="assets/images/insektknÔÇÿk.jpg" alt="Product 5" />
+            <h5><strong>INSEKTKNÆK</strong></h5>
+            <p>med Chiafrø og insektmel</p>
+            <strong>
+              <p>29,95</p>
+            </strong>
+            <button>Læg I Kurv</button>
+          </div>
+          <div class="productCard">
+            <img src="assets/images/daretoeat_img.jpg" alt="Product 6" />
+            <h5><strong>SINSEKTSNACK</strong></h5>
+            <p>med Sour Cream & Onion</p>
+            <strong>
+              <p>39,95</p>
+            </strong>
+            <button>Læg I Kurv</button>
+          </div>
+        </div>
+      </article>
+    </section>
+    <hr />
+    <!-- ABOUT SECTION  -->
+    <section id="about">
+      <header>
+        <h2><strong>OM KRYB</strong></h2>
+      </header>
+      <article>
+        <div class="flexContainer">
+          <p>
+            Uanset hvor vi arbejder i
+            <strong>KRYB</strong>
+            , så deler vi de samme værdier og den samme mission om at skabe livsglæde gennem måltidet.
+            <br />
+            <br />
+            <strong>KRYB</strong>
+            sigter mod at dele lækre, sunde, insektbaserede snacks, uden at gå på kompromis med smag og duft.
+            <br />
+            <br />
+            Vores sortiment har lokalt fremstillede ingredienser i deres mest naturlige form for at skabe inspirerede snacks, hvor alt er lavet 100% af os selv.
+            <br />
+            <br />
+            Vi er lidenskabelige med at tilbyde vores kunder velsmagende og nærende snacks lavet af sunde ingredienser, der har en positiv indvirkning på krop og sjæl.
+            <br />
+            <br />
+            Hos
+            <strong>KRYB</strong>
+            er vores mål simpelt – at omdefinere hvad det betyder at spise godt.
+            <br />
+            <br />
+            Vi er forpligtede til at opretholde en bæredygtig og sund livsstil og aktivt bidrage til at sænke vores CO2-fodaftryk og bevare vores planets vandforsyning gennem vores sortiment,
+            opmærksomme ingrediensopkøb og miljøvenlige emballage. Spis godt.
+            <br />
+            <br />
+            Spis med formål. Spis
+            <strong>KRYB</strong>
+            .
+            <br />
+            <br />
+            Læs mere om
+            <strong>KRYB</strong>
+            her >>>
+          </p>
+          <img src="assets/images/restaurant.jpg" alt="KRYB stiiting area" />
+        </div>
+      </article>
+    </section>
+    <hr />
+    <!-- RECEPIES SECTION   -->
+    <section id="recepies">
+      <div class="recipe-slider-container">
+        <h1 class="recipe-heading"><strong>OPSKRIFTER</strong></h1>
+
+        <div class="recipe-carousel">
+          <div class="recipe-slide-group active" id="recipe-group1">
+            <img src="assets/images/Instagram_01.jpg" alt="Cupcakes with frosting" class="recipe-image" />
+            <img src="assets/images/Instagram_02.jpg" alt="Mashed potatoes with herbs" class="recipe-image" />
+            <img src="assets/images/Instagram_3.jpg" alt="Chocolate pastries" class="recipe-image" />
+          </div>
+
+          <div class="recipe-slide-group inactive" id="recipe-group2">
+            <img src="assets/images/Instagram_04.jpg" alt="Fresh baked bread" class="recipe-image" />
+            <img src="assets/images/Instagram_05.jpg" alt="Vegetable soup" class="recipe-image" />
+            <img src="assets/images/Instagram_06.jpg" alt="Fruit dessert" class="recipe-image" />
+          </div>
+        </div>
+        <!-- Left Arrow Button -->
+        <button class="recipe-arrow left" aria-label="Previous slides">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <!-- Right Arrow Button -->
+        <button class="recipe-arrow right" aria-label="Next slides">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </section>
+    <hr />
+    <!-- CONTACT SECTION  -->
+    <section id="contact">
+      <header>
+        <strong><h2>KONTAKT KRYB</h2></strong>
+      </header>
+      <article>
+        <div class="contactContainer">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aperiam nemo, culpa, asperiores saepe temporibus facilis fugit magnam excepturi deserunt eius pariatur enim vitae
+            laborum quos minus maiores! Commodi, illo.
+
+            <br />
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nesciunt ipsum quidem dolorem veniam quae similique aperiam sit impedit obcaecati placeat quasi, nisi quos atque
+            architecto quisquam accusantium. Architecto, esse!
+
+            <br />
+
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A, laudantium porro eligendi, quos labore molestias inventore laborum amet voluptate deleniti repellendus earum. Corrupti assumenda
+            repellat repudiandae autem quas alias adipisci?
+            <br />
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aperiam nemo, culpa, asperiores saepe temporibus facilis fugit magnam excepturi deserunt eius pariatur enim vitae
+            laborum quos minus maiores! Commodi, illo.
+
+            <br />
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nesciunt ipsum quidem dolorem veniam quae similique aperiam sit impedit obcaecati placeat quasi, nisi quos atque
+            architecto quisquam accusantium. Architecto, esse!
+
+            <br />
+
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A, laudantium porro eligendi, quos labore molestias inventore laborum amet voluptate deleniti repellendus earum. Corrupti assumenda
+            repellat repudiandae autem quas alias adipisci?
+          </p>
+          <form action="submit_form.php" method="post" class="contactForm">
+            <label for="firstName">For og efternavn</label>
+            <input type="text" id="firstName" name="firstName" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="message">Besked:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="button" id="validate">Send besked</button>
+          </form>
+        </div>
+      </article>
+    </section>
+    <hr />
+    <!-- GLOBAL FOOTER SOCIALS -->
     <footer>
       <div class="footerContainer">
-        <p>&copy; 2023 My Website</p>
-        <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="socialsContainer">
+          <span><img src="assets/images/linkedin_net.png" alt="LInkedin Social Media account" /></span>
+          <span><img src="assets/images/instagram.png" alt="Instagram Social Media account" /></span>
+          <span><img src="assets/images/facebook.png" alt="Facebook Social Media account" /></span>
+          <span><img src="assets/images/twitter.png" alt="Twitter Social Media account" /></span>
+        </div>
+        <img class="krybLogoFooter" src="assets/images/logo_small_black.png" alt="KRYB Logo" />
+        <div class="footerGridContainer">
+          <div>
+            <h5><strong>Om KRYB</strong></h5>
+            <ul>
+              <li>
+                <a href="#">Historien</a>
+              </li>
+              <li><a href="#">Virksomheder og afdelinger</a></li>
+              <li><a href="#">Job</a></li>
+              <li><a href="#">CSR</a></li>
+              <li><a href="#">Danmark mod Madspild</a></li>
+              <li><a href="#">Foreign suppliers</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>INSPIRATION</h5>
+            <ul>
+              <li>
+                <a href="#">Vin & Mad</a>
+              </li>
+              <li><a href="#">Opskrifter</a></li>
+              <li><a href="#">Sociale medier</a></li>
+              <li><a href="#">Garver Privat</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>OM HANDEL</h5>
+            <ul>
+              <li>
+                <a href="#">Handelsbetingelser</a>
+              </li>
+              <li><a href="#">Beskyttelse af personlige oplysninger</a></li>
+              <li><a href="#">Levering</a></li>
+              <li><a href="#">Fødevarestyrelsens smiely-rapporter</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>KONTAKT</h5>
+            <ul>
+              <li>
+                <a href="#">Telefon (+45) 12345678</a>
+              </li>
+              <li><a href="#">info@kryb.dk</a></li>
+              <li><a href="#">Butikker /Åbningstider</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

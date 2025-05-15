@@ -1,34 +1,384 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+@import url(https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid);
 @import url(reset.css);
 :root {
-  --primary-color: #333;
-  --secondary-color: #f4f4f4;
-  --background-color: #d3d3d3;
-  --border-color: #ccc;
-  --hover-color: #444;
-  --active-color: #222;
-  --focus-color: #444;
-  --button-color: #4caf50;
-  --button-hover-color: #45a049;
-  --valid-color: green;
-  --invalid-color: red;
+  --white: #ffffff;
+  --background: #eee;
+  --font-family: "helvetica neue", helvetica, arial, sans-serif;
+  --font-size-one: 2.5rem;
+  --font-size-two: 1.5rem;
+  --product-font-size: 1rem;
+  --generel-text-color: #000;
 }
-/* #region Global Styles */
+/* #region GLobals */
+/* GLOBAL CSS */
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: var(--secondary-color);
-  color: black;
+  font-family: var(--font-family);
+  font-size: var(--font-size-two);
+  background-color: var(--white);
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--primary-color);
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  margin-bottom: 1rem;
+img {
+  max-width: 100%;
+  height: auto;
 }
 /* #endregion */
+/* #region Header */
+.mainHeader {
+  display: flex;
+  background-color: var(--background);
+  padding: 0 1rem;
+}
+.logoContainer {
+  display: block;
+  margin: 0 auto;
+}
+.logoContainer img {
+  margin-top: 1rem;
+  width: 100%;
+  height: auto;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+}
+.search-container i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.search-container input {
+  border: none;
+  padding: 8px;
+  font-size: 16px;
+}
+header .krypLogo {
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* #endregion */
+/* #region NAVIGATION */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: var(--background);
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+nav ul li {
+  font-size: 1rem;
+  font-weight: 400;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--generel-text-color);
+}
+nav ul li a:hover {
+  color: var(--white);
+  border-radius: 5px;
+}
+.cartLink i {
+  font-size: 25px;
+}
+/* #endregion */
+/* #region HERO */
+.heroImage img {
+  width: 100%;
+  height: auto;
+}
+/* #endregion */
+/* #region MAIN */
+/* Main CONTENT */
+/* #region PRODUCTS */
+#products h2 {
+  font-size: var(--font-size-one);
+  text-align: center;
+  margin: 2rem 0;
+}
+.productCards h5 {
+  font-size: var(--font-size-two);
+  text-align: center;
+  margin: 1rem 0;
+}
+.productCards p {
+  font-size: var(--product-font-size);
+  text-align: center;
+  margin: 1rem 0;
+}
+#products .productCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  padding: 0 10rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+.productCards button {
+  background-color: var(--background);
+  border: none;
+  padding: 0.5rem 4rem;
+  font-size: 16px;
+  cursor: pointer;
+}
+.productCards button:hover {
+  background-color: var(--generel-text-color);
+  color: var(--background);
+}
+/* #endregion PRODUCTS */
+/* #region ABOUT KRYP */
+#about h2 {
+  font-size: var(--font-size-one);
+  text-align: center;
+  margin-top: 6rem;
+}
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 6rem;
+  margin-bottom: 6rem;
+}
+.flexContainer img {
+  width: 100%;
+  height: auto;
+}
+/* #endregion */
+/* #region recepies */
+/* Main container */
+.recipe-slider-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.recipe-slider-container .recipe-heading {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/* Carousel positioning */
+.recipe-slider-container .recipe-carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Carousel main structure */
+.recipe-slider-container .recipe-carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Slide groups */
+.recipe-slider-container .recipe-slide-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.recipe-slider-container .recipe-slide-group.active {
+  opacity: 1;
+  display: flex;
+}
+
+.recipe-slider-container .recipe-slide-group.inactive {
+  opacity: 0;
+  display: none;
+}
+
+/* Individual images */
+.recipe-slider-container .recipe-image {
+  width: 30%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation arrows */
+.recipe-slider-container .recipe-arrow {
+  font-size: 3rem;
+  color: #333;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.recipe-slider-container .recipe-arrow.left {
+  left: 20px;
+}
+
+.recipe-slider-container .recipe-arrow.right {
+  right: 20px;
+}
+
+/* #endregion  */
+/* #region CONTACT */
+#contact {
+  margin-bottom: 6rem;
+}
+#contact h2 {
+  font-size: var(--font-size-one);
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: lightgray;
+  border: 1px solid #d1d9e0;
+  border-radius: 8px;
+  text-align: left;
+  max-height: 451px;
+}
+
+.contactForm label {
+  font-size: 1rem;
+  color: #333;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 0.4rem 0;
+  font-size: 1rem;
+  border: 1px solid #d1d9e0;
+  border-radius: 4px;
+  background-color: #ffffff;
+  resize: none;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  outline: none;
+  border-color: #888;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.contactForm button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #888;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contactForm button:hover {
+  background-color: var();
+}
+.contactContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 0 8rem;
+  text-align: center;
+}
+.contactContainer p {
+  font-size: var(--product-font-size);
+  text-align: center;
+}
+/* #region FOOTER */
+.footerContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+  padding: 0 10rem;
+  text-align: center;
+}
+.socialsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.krybLogoFooter {
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* #endregion */
+/* #endregion */
+/* #region FOOTER */
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--background);
+}
+footer .footerContainer p {
+  font-size: var(--product-font-size);
+  color: var(--generel-text-color);
+  margin: 0.5rem 0;
+}
+
+.socialsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  width: 40%;
+  margin-bottom: 2rem;
+}
+
+.footerGridContainer a {
+  font-size: 1.5rem;
+  color: var(--generel-text-color);
+  text-decoration: none;
+}
+.footerGridContainer {
+  display: flex;
+  gap: 2rem;
+}
+.footerGridContainer h5 {
+  font-size: var(--font-size-one);
+  margin: 0.5rem 0;
+}
+.footerGridContainer li {
+  margin-bottom: 0.5rem;
+}
+.socialsContainer a:hover {
+  color: var(--white);
+}
+/* #endregion */
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .recipe-slider-container .recipe-image {
+    height: 180px;
+  }
+
+  .recipe-slider-container .recipe-arrow {
+    font-size: 2.5rem;
+  }
+
+  .recipe-slider-container .recipe-arrow.left {
+    left: -40px;
+  }
+
+  .recipe-slider-container .recipe-arrow.right {
+    right: -40px;
+  }
+}
