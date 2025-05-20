@@ -1,10 +1,41 @@
 // Carusel functionality
+let currentIndex = 0; // Initialize the current index
 
+function plusSlides(value) {
+  currentIndex += value;
+  showSlides(currentIndex);
+}
+
+function showSlides(index) {
+  const slides = document.querySelectorAll('.carouselSlide');
+  if (index > slides.length / 3 - 1) {
+    currentIndex = 0;
+  } else if (index < 0) {
+    currentIndex = slides.length / 3 - 1;
+  }
+  // 0,1,2 figure Imgs 0
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none'; // Hide all slides
+  }
+  for (let i = 0; i < 3; i++) {
+    let showIndex = currentIndex * 3 + i;
+    slides[showIndex].style.display = 'block';
+  }
+  console.log(currentIndex);
+  // 3,4,5 figure Imgs 1
+}
+document.querySelector('.carousel-arrow--left').addEventListener('click', function () {
+  plusSlides(-1);
+});
+document.querySelector('.carousel-arrow--right').addEventListener('click', function () {
+  plusSlides(1);
+});
 
 // Form validation with success alert
 document.getElementById('validate').addEventListener('click', function (event) {
   event.preventDefault(); // Prevent form submission
-  const form = this.closest('form');
+  // const form = this.closest('form'); // Get the form element
+  const form = document.getElementById('infoForm');
   const fullname = form.fullName;
   const email = form.email;
   const message = form.message;
@@ -61,3 +92,5 @@ document.querySelectorAll('input, textarea').forEach((element) => {
     parent.classList.remove('error');
   });
 });
+
+// array.forEach((element) => {});
